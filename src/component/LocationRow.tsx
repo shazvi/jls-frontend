@@ -37,7 +37,7 @@ export default function LocationRow({ locationStock, updateLocationStock, select
         <tr key={locationStock.location}>
             <td>{locationStock.location}</td>
             <td>{locationStock.quantity}</td>
-            <td><form id="qtyForm" onSubmit={submitQty}>
+            <td><form id={"qtyForm" + locationStock.location} onSubmit={submitQty}>
                 <input
                     disabled={loading}
                     type="number"
@@ -48,7 +48,7 @@ export default function LocationRow({ locationStock, updateLocationStock, select
                     onChange={updateEditField} />
             </form></td>
             
-            <td><button disabled={loading} type="submit" form="qtyForm" className="btn btn-sm btn-outline-primary">
+            <td><button disabled={loading} type="submit" form={"qtyForm" + locationStock.location} className="btn btn-sm btn-outline-primary">
                 {loading ? <div className="spinner-border" role="status"/> : "Update"}
             </button></td>
         </tr>
