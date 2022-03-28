@@ -24,4 +24,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Testing
 
--
+- Rename `cypress.env.sample.json` to `cypress.env.json` and update its values to correspond to your dev environment.
+- Start the dev server if it isn't already running, and then open cypress:
+
+```bash
+npm start
+npx cypress open
+```
+
+- In cypress's interactive tool, run the tests
