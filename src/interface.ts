@@ -7,6 +7,10 @@ export interface CoreProductResponse extends BaseResponse {
     data: CoreProduct[]
 }
 
+export interface ProductDetailResponse extends BaseResponse {
+    data: FullProduct
+}
+
 // Products list object for API response
 export interface CoreProduct {
     core_id: string,

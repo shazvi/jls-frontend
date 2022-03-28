@@ -1,4 +1,15 @@
 .product-list-internal-title {
-    color: #6c6c6c;
     font-size: 0.8rem;
+}
+.list-group-item.active {
+    color: #fff;
+}
+
+.select-product-text {
+    font-size: 1.2rem;
+}
+
+.product-detail-spinner {
+    width: 4rem;
+    height: 4rem;
 }
