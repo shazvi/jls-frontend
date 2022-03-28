@@ -49,7 +49,7 @@ export default function LocationRow({ locationStock, updateLocationStock, select
             </form></td>
             
             <td><button disabled={loading} type="submit" form={"qtyForm" + locationStock.location} className="btn btn-sm btn-outline-primary">
-                {loading ? <div className="spinner-border" role="status"/> : "Update"}
+                {loading ? <div className="spinner-border spinner-border-sm" role="status"/> : "Update"}
             </button></td>
         </tr>
     );
