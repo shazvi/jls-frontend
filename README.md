@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Notes
 
-## Available Scripts
+- Implemented a client side search function. Showing the entire list by itself simply wasn't intuitive to use since the user would have to scroll through a list of thousands of items to find a specific one.
+- There is still a downside in the current list implementation because the entire product list gets loaded at the start. This might affect frontend performance and load times as the list continues to grow.
+- A better approach would be to implement pagination and search on the backend so that we can implement infinite scrolling on the frontend to load page by page as the user reaches the bottom of the list. However, this requires more time to implement than the existing feature and is arguably out of scope.
 
-In the project directory, you can run:
+### Dependencies
 
-### `npm start`
+- Node.js
 
-Runs the app in the development mode.\
+### Local setup
+
+- Execute the following commands in a terminal:
+
+```bash
+npm install
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Deployment (CI/CD)
 
-### `npm test`
+-
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Testing
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-
